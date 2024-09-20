@@ -270,21 +270,21 @@ mqtt:
   - state_topic: 'ovms/metric/v/b/c/temp' #   21.624,21.114,21.216°C
     name: 'Leaf Battery Cell 1 Temperature'
     state_class: 'measurement'
-    value_template: '{{ (value.split(",")[0]|round(2) }}'
+    value_template: '{{ value.split(",")[0]|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
   - state_topic: 'ovms/metric/v/b/c/temp' #   21.624,21.114,21.216°C
     name: 'Leaf Battery Cell 2 Temperature'
     state_class: 'measurement'
-    value_template: '{{ (value.split(",")[1]|round(2) }}'
+    value_template: '{{ value.split(",")[1]|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
   - state_topic: 'ovms/metric/v/b/c/temp' #   21.624,21.114,21.216°C
     name: 'Leaf Battery Cell 3 Temperature'
     state_class: 'measurement'
-    value_template: '{{ (value.split(",")[2]|round(2) }}'
+    value_template: '{{ value.split(",")[2]|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
@@ -325,28 +325,28 @@ mqtt:
   - state_topic: 'ovms/metric/v/b/temp' #   21.32°C
     name: 'Leaf Battery Pack Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
   - state_topic: 'ovms/metric/v/b/p/temp/avg' #   21.32°C
     name: 'Leaf Battery Pack Average Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
   - state_topic: 'ovms/metric/v/b/p/temp/max' #   21.624°C
     name: 'Leaf Battery Pack Max Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer-high'
 
   - state_topic: 'ovms/metric/v/b/p/temp/min' #   21.114°C
     name: 'Leaf Battery Pack Min Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer-low'
 
@@ -408,25 +408,25 @@ mqtt:
   - state_topic: 'ovms/metric/v/b/range/est' #   35.3865km
     name: 'Leaf Battery Estimated Range'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km'
 
   - state_topic: 'ovms/metric/v/b/range/full' #   44.793km
     name: 'Leaf Battery Ideal Max Range'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km'
 
   - state_topic: 'ovms/metric/v/b/range/ideal' #   61.0259km
     name: 'Leaf Battery Ideal Range'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km'
 
   - state_topic: 'ovms/metric/v/b/range/speed' #   0.5km/h
     name: 'Leaf Battery Ideal Range Speed'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'mph' ## HUH??
 
   - state_topic: 'ovms/metric/v/b/soc' #   79%
@@ -494,7 +494,7 @@ mqtt:
   - state_topic: 'ovms/metric/v/c/limit/range' #   0km
     name: 'Leaf Charger Desired Range'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km'
     icon: 'mdi:ev-station'
 
@@ -560,14 +560,14 @@ mqtt:
   - state_topic: 'ovms/metric/v/e/cabinsetpoint' #   0°C
     name: 'Leaf Cabin Desired Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
   - state_topic: 'ovms/metric/v/e/cabintemp' #   18.8889°C
     name: 'Leaf Cabin Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
@@ -601,7 +601,7 @@ mqtt:
   - state_topic: 'ovms/metric/v/e/temp' #   22.5°C
     name: 'Leaf Ambient Temperature'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
@@ -627,7 +627,7 @@ mqtt:
   - state_topic: 'ovms/metric/v/i/temp' #   16.6667°C
     name: 'Leaf Inverter Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
@@ -640,7 +640,7 @@ mqtt:
   - state_topic: 'ovms/metric/v/m/temp' #   17.7778°C
     name: 'Leaf Motor Temp'
     state_class: 'measurement'
-    value_template: '{{ (value|round(2) }}'
+    value_template: '{{ value|round(2) }}'
     unit_of_measurement: '°C'
     icon: 'mdi:thermometer'
 
@@ -668,7 +668,7 @@ mqtt:
   - state_topic: 'ovms/metric/v/p/gpsspeed' #   0km/h
     name: 'Leaf GPS Speed'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km/h'
 
   - state_topic: 'ovms/metric/v/p/gpssq' #   53%
@@ -710,28 +710,28 @@ mqtt:
   - state_topic: 'ovms/metric/v/t/pressure' #
     name: 'Leaf FL Tire Pressure'
     state_class: 'measurement'
-    value_template: '{{ ((value.split(",")[0])|round(1) }}'
+    value_template: '{{ (value.split(",")[0])|round(1) }}'
     unit_of_measurement: 'bar'
     icon: 'mdi:tire'
 
   - state_topic: 'ovms/metric/v/t/pressure' #
     name: 'Leaf FR Tire Pressure'
     state_class: 'measurement'
-    value_template: '{{ ((value.split(",")[1])|round(1) }}'
+    value_template: '{{ (value.split(",")[1])|round(1) }}'
     unit_of_measurement: 'bar'
     icon: 'mdi:tire'
 
   - state_topic: 'ovms/metric/v/t/pressure' #
     name: 'Leaf RL Tire Pressure'
     state_class: 'measurement'
-    value_template: '{{ ((value.split(",")[2])|round(1) }}'
+    value_template: '{{ (value.split(",")[2])|round(1) }}'
     unit_of_measurement: 'bar'
     icon: 'mdi:tire'
 
   - state_topic: 'ovms/metric/v/t/pressure' #
     name: 'Leaf RR Tire Pressure'
     state_class: 'measurement'
-    value_template: '{{ ((value.split(",")[3])|round(1) }}'
+    value_template: '{{ (value.split(",")[3])|round(1) }}'
     unit_of_measurement: 'bar'
     icon: 'mdi:tire'
 
@@ -785,7 +785,7 @@ mqtt:
   - state_topic: 'ovms/metric/xnl/v/b/range/instrument' #   82km
     name: 'Leaf Instrument Range'
     state_class: 'measurement'
-    value_template: '{{ (value|round(1) }}'
+    value_template: '{{ value|round(1) }}'
     unit_of_measurement: 'km'
 
   - state_topic: 'ovms/metric/xnl/v/b/regen/limit' #   5kW
