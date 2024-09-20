@@ -1,0 +1,229 @@
+
+# Sources:
+# See https://docs.openvehicles.com/en/latest/userguide/metrics.html
+# OVMS# metrics list
+# m.egpio.input                            0,1,2,3,4,5,6,7,8,9
+# m.egpio.monitor
+# m.egpio.output                           3,4,5,6,7,8,9
+# m.freeram                                3470900
+# m.hardware                               OVMS WIFI BLE BT cores=2 rev=ESP32/3; MODEM SIM7600
+# m.monotonic                              19591Sec
+# m.net.mdm.iccid                          89000000000000000012
+# m.net.mdm.mode                           LTE,Online
+# m.net.mdm.model                          LE20B03SIM1234G
+# m.net.mdm.netreg                         RegisteredRoaming
+# m.net.mdm.network                        T-Mobile Hologram
+# m.net.mdm.sq                             -67dBm
+# m.net.provider                           WLAN-214677
+# m.net.sq                                 -55dBm
+# m.net.type                               wifi
+# m.net.wifi.network                       WLAN-214677
+# m.net.wifi.sq                            -55.2dBm
+# m.serial
+# m.tasks                                  17
+# m.time.utc                               1682344866Sec
+# m.version                                3.3.003/ota_0/main (build idf v3.3.4-848-g1ff5e24b1 Sep  1 2022 08:40:30)
+# s.v2.connected                           yes
+# s.v2.peers                               0
+# s.v3.connected                           yes
+# s.v3.peers                               0
+# v.b.12v.current
+# v.b.12v.voltage                          12.24V
+# v.b.12v.voltage.alert
+# v.b.12v.voltage.ref                      12.56V
+# v.b.c.temp                               21.624,21.114,21.216°C
+# v.b.c.temp.alert                         0,0,0
+# v.b.c.temp.dev.max                       0.31,-0.2,-0.1°C
+# v.b.c.temp.max                           21.624,21.114,21.216°C
+# v.b.c.temp.min                           21.624,21.114,21.216°C
+# v.b.c.voltage                            4.025,4.021,4.02,4.022,4.021,4.02,4.02,4.022,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.021,4.024,4.022,4.025,4.021,4.021,4.027,4.021,4.021,4.02,4.027,4.022,4.018,4.021,4.027,4.021,4.021,4.02,4.025,4.022,4.021,4.025,4.027,4.021,4.021,4.02,4.025,4.021,4.025,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.025,4.021,4.027,4.021,4.021,4.02,4.022,4.025,4.021,4.021,4.027,4.022,4.021,4.025,4.027,4.021,4.025,4.02,4.027,4.022,4.022,4.021,4.031,4.022,4.022,4.022,4.027,4.022,4.022,4.021,4.023V
+# v.b.c.voltage.alert
+# v.b.c.voltage.dev.max
+# v.b.c.voltage.max                        4.025,4.021,4.02,4.022,4.021,4.02,4.02,4.022,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.021,4.024,4.022,4.025,4.021,4.021,4.027,4.021,4.021,4.02,4.027,4.022,4.018,4.021,4.027,4.021,4.021,4.02,4.025,4.022,4.021,4.025,4.027,4.021,4.021,4.02,4.025,4.021,4.025,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.025,4.021,4.027,4.021,4.021,4.02,4.022,4.025,4.021,4.021,4.027,4.022,4.021,4.025,4.027,4.021,4.025,4.02,4.027,4.022,4.022,4.021,4.031,4.022,4.022,4.022,4.027,4.022,4.022,4.021,4.023V
+# v.b.c.voltage.min                        4.025,4.021,4.02,4.022,4.021,4.02,4.02,4.022,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.021,4.024,4.022,4.025,4.021,4.021,4.027,4.021,4.021,4.02,4.027,4.022,4.018,4.021,4.027,4.021,4.021,4.02,4.025,4.022,4.021,4.025,4.027,4.021,4.021,4.02,4.025,4.021,4.025,4.021,4.027,4.022,4.022,4.021,4.027,4.021,4.025,4.02,4.022,4.022,4.022,4.021,4.027,4.022,4.025,4.021,4.027,4.021,4.021,4.02,4.022,4.025,4.021,4.021,4.027,4.022,4.021,4.025,4.027,4.021,4.025,4.02,4.027,4.022,4.022,4.021,4.031,4.022,4.022,4.022,4.027,4.022,4.022,4.021,4.023V
+# v.b.cac                                  39.1549Ah
+# v.b.consumption                          0Wh/km
+# v.b.coulomb.recd
+# v.b.coulomb.recd.total
+# v.b.coulomb.used
+# v.b.coulomb.used.total
+# v.b.current                              -0.5A
+# v.b.energy.recd
+# v.b.energy.recd.total
+# v.b.energy.used
+# v.b.energy.used.total
+# v.b.health
+# v.b.p.level.avg
+# v.b.p.level.max
+# v.b.p.level.min
+# v.b.p.level.stddev
+# v.b.p.temp.avg                           21.32°C
+# v.b.p.temp.max                           21.624°C
+# v.b.p.temp.min                           21.114°C
+# v.b.p.temp.stddev                        0.22°C
+# v.b.p.temp.stddev.max                    0.22°C
+# v.b.p.voltage.avg                        4.02266V
+# v.b.p.voltage.grad                       0.0014V
+# v.b.p.voltage.max                        4.031V
+# v.b.p.voltage.min                        4.018V
+# v.b.p.voltage.stddev                     0.00249V
+# v.b.p.voltage.stddev.max                 0V
+# v.b.power                                -0.193kW
+# v.b.range.est                            35.3865km
+# v.b.range.full                           44.793km
+# v.b.range.ideal                          61.0259km
+# v.b.range.speed                          0.5km/h
+# v.b.soc                                  79%
+# v.b.soh                                  59%
+# v.b.temp                                 21°C
+# v.b.voltage                              386V
+# v.c.12v.current
+# v.c.12v.power
+# v.c.12v.temp
+# v.c.12v.voltage
+# v.c.charging                             no
+# v.c.climit                               0A
+# v.c.current                              0A
+# v.c.duration.full
+# v.c.duration.range
+# v.c.duration.soc
+# v.c.efficiency                           100%
+# v.c.kwh                                  0kWh
+# v.c.kwh.grid
+# v.c.kwh.grid.total
+# v.c.limit.range                          0km
+# v.c.limit.soc                            0%
+# v.c.mode
+# v.c.pilot                                yes
+# v.c.power                                0kW
+# v.c.state                                timerwait
+# v.c.substate                             timerwait
+# v.c.temp
+# v.c.time                                 0Sec
+# v.c.timermode
+# v.c.timerstart
+# v.c.type                                 type1
+# v.c.voltage                              0V
+# v.d.cp                                   yes
+# v.d.fl                                   no
+# v.d.fr                                   no
+# v.d.hood
+# v.d.rl                                   no
+# v.d.rr                                   no
+# v.d.trunk                                no
+# v.e.alarm
+# v.e.aux12v
+# v.e.awake                                no
+# v.e.c.config
+# v.e.c.login
+# v.e.cabinfan                             0%
+# v.e.cabinfanlimit                        7
+# v.e.cabinintake
+# v.e.cabinsetpoint                        0°C
+# v.e.cabintemp                            18.8889°C
+# v.e.cabinvent                            off
+# v.e.charging12v                          no
+# v.e.cooling                              no
+# v.e.drivemode
+# v.e.drivetime                            0Sec
+# v.e.footbrake
+# v.e.gear                                 0
+# v.e.handbrake                            yes
+# v.e.headlights                           no
+# v.e.heating                              no
+# v.e.hvac                                 no
+# v.e.locked                               no
+# v.e.on                                   no
+# v.e.parktime                             63885Sec
+# v.e.regenbrake
+# v.e.serv.range
+# v.e.serv.time
+# v.e.temp                                 22.5°C
+# v.e.throttle                             0%
+# v.e.valet
+# v.g.climit                               0A
+# v.g.current                              0A
+# v.g.duration.empty
+# v.g.duration.range
+# v.g.duration.soc
+# v.g.efficiency
+# v.g.generating
+# v.g.kwh
+# v.g.kwh.grid
+# v.g.kwh.grid.total
+# v.g.limit.range
+# v.g.limit.soc
+# v.g.mode
+# v.g.pilot                                no
+# v.g.power                                0kW
+# v.g.state
+# v.g.substate
+# v.g.temp
+# v.g.time                                 0Sec
+# v.g.timermode
+# v.g.timerstart
+# v.g.type
+# v.g.voltage                              0V
+# v.i.efficiency                           100%
+# v.i.power                                0kW
+# v.i.temp                                 16.6667°C
+# v.m.rpm                                  0
+# v.m.temp                                 17.7778°C
+# v.p.acceleration
+# v.p.altitude                             1290.4m
+# v.p.direction                            0°
+# v.p.gpshdop                              1.3
+# v.p.gpslock                              yes
+# v.p.gpsmode                              AA
+# v.p.gpsspeed                             0km/h
+# v.p.gpssq                                53%
+# v.p.gpstime                              1687474862Sec
+# v.p.latitude                             40.9464
+# v.p.location
+# v.p.longitude                            -111.886
+# v.p.odometer                             176015km
+# v.p.satcount                             8
+# v.p.speed
+# v.p.trip
+# v.t.alert
+# v.t.health
+# v.t.pressure
+# v.t.temp
+# v.type                                   NL
+# v.vin
+# xnl.bms.balancing                        1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96
+# xnl.bms.temp.int                         21,21,255,21,21,0°C
+# xnl.bms.thermistor                       498,503,65535,502
+# xnl.cc.fan.only                          no
+# xnl.cc.remotecool                        no
+# xnl.cc.remoteheat                        no
+# xnl.cc.rqinprogress                      no
+# xnl.v.b.charge.limit                     102.3kW
+# xnl.v.b.e.available                      10.72kWh
+# xnl.v.b.e.capacity                       10.88kWh
+# xnl.v.b.gids                             134
+# xnl.v.b.heatergranted                    no
+# xnl.v.b.heaterpresent                    yes
+# xnl.v.b.heatrequested                    no
+# xnl.v.b.hx                               39.52
+# xnl.v.b.max.gids                         0
+# xnl.v.b.output.limit                     110kW
+# xnl.v.b.range.instrument                 82km
+# xnl.v.b.regen.limit                      5kW
+# xnl.v.b.soc.instrument                   79%
+# xnl.v.b.soc.newcar                       47.6868%
+# xnl.v.b.soc.nominal                      78.8%
+# xnl.v.b.soh.instrument                   59%
+# xnl.v.b.soh.newcar                       59.3256%
+# xnl.v.b.type                             1
+# xnl.v.c.chargebars                       0
+# xnl.v.c.chargeminutes3kW                 0
+# xnl.v.c.count.l0l1l2                     0
+# xnl.v.c.count.qc                         0
+# xnl.v.c.duration                         45,60,105,5,5,5Min
+# xnl.v.c.event.notification               reset
+# xnl.v.c.event.reason
+# xnl.v.c.limit.reason                     normal
+# xnl.v.c.quick                            0
+# xnl.v.c.state.previous                   timerwait
+# xnl.v.e.hvac.auto                        no
